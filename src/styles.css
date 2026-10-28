@@ -1,5 +1,12 @@
+@font-face {
+	font-family: navFont;
+	src: url("../assets/Dersu\ Uzala\ brush.ttf");
+}
+
 body {
 	background: antiquewhite;
+	display: flex;
+	margin: 0px;
 }
 
 #nav {
@@ -7,13 +14,21 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	width: 20%;
+	width: 30%;
 	position: absolute;
 	height: 100%;
-	gap: 3%;
+	gap: 5%;
 }
 
+#content {
+	margin-left: 30%;
+}
 
+img {
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+}
 
 button {
     background:none;
@@ -21,6 +36,11 @@ button {
     margin:0;
     padding:0;
     cursor: pointer;
+	font-family: 'navFont';
+	font-size: 2em;
+	width: 100%;
+	background-size: 100% 100%;
+	color: rgb(0, 0, 0);
 }
 
 .padding {
