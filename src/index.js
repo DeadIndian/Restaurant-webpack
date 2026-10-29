@@ -6,6 +6,8 @@ import menu from "./menu.js";
 import contact from "./contact.js";
 
 const img = document.createElement("img");
+img.setAttribute('id','background')
+console.log(img)
 img.src = bgimg;
 
 const bdy = document.getElementById("content");

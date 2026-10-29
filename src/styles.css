@@ -3,6 +3,16 @@
 	src: url("../assets/Dersu\ Uzala\ brush.ttf");
 }
 
+@font-face {
+	font-family: subFont;
+	src: url("../assets/JANSINA.ttf");
+}
+
+@font-face {
+	font-family: h2Font;
+	src: url("../assets/Gokure\ Japan\ Italic\ Demo.ttf");
+}
+
 body {
 	background: antiquewhite;
 	display: flex;
@@ -14,19 +24,20 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	width: 30%;
+	width: 25%;
 	position: absolute;
 	height: 100%;
 	gap: 5%;
 }
 
 #content {
-	margin-left: 30%;
+	margin-left: 25%;
 }
 
-img {
+#background {
 	position: absolute;
 	width: 100%;
+	height: 100%;
 	z-index: -1;
 }
 
@@ -37,12 +48,52 @@ button {
     padding:0;
     cursor: pointer;
 	font-family: 'navFont';
-	font-size: 2em;
+	font-size: 2.5em;
 	width: 100%;
 	background-size: 100% 100%;
 	color: rgb(0, 0, 0);
 }
 
+h1 {
+	align-self: center;
+	margin-left: 40%;
+	margin-top: 20%;
+	font-family: 'navFont';
+	font-size: 3em;
+}
+
+h3 {
+	font-family: 'h2Font';
+}
+
 .padding {
 	margin: 10px;
+}
+
+#menuItems {
+	display: grid;
+	grid-template-columns: auto auto;
+	margin-left: 15%;
+	gap: 5%;
+	column-gap: 4em;
+}
+
+p {
+	font-family: 'subFont';
+}
+
+ul {
+	list-style-type: none;
+	font-family: 'subFont';
+}
+
+a {
+	color: black;
+}
+
+#item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
